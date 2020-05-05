@@ -19,7 +19,8 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "setup_node.sh"
     },
     "finish": {
       "text": "finish.md"
@@ -32,6 +33,7 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "docker",
+    "port": 1883
   }
 }
