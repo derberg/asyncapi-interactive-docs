@@ -25,6 +25,9 @@
       "text": "finish.md"
     }
   },
+  "files": [
+    "asyncapi.yml"
+  ],
   "environment": {
     "uilayout": "editor-terminal"
   },
