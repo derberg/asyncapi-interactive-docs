@@ -7,7 +7,8 @@
     "steps": [
       {
         "title": "Step 1",
-        "text": "step1.md"
+        "text": "step1.md",
+        "courseData": "setup_node.sh"
       },
       {
         "title": "Step 2",
@@ -20,7 +21,6 @@
     ],
     "intro": {
       "text": "intro.md",
-      "courseData": "setup_node.sh"
     },
     "finish": {
       "text": "finish.md"
