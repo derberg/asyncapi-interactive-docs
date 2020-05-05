@@ -13,6 +13,7 @@ To generate your code you'll use the [AsyncAPI Generator](https://github.com/asy
 Install and start the service:
 
 1. Install dependencies of newly generated application: `npm install`{{execute}}
+1. Clear the terminal from all the previous noise `clear`{{execute}}
 1. Start the application: `npm start`{{execute}}
 
 # Start MQTT broker
