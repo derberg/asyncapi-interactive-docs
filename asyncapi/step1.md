@@ -4,42 +4,42 @@ Copy below content to the editor, into `asyncapi.yaml` file:
 
 <pre class="file" data-filename="asyncapi.yaml" data-target="replace">
 asyncapi: '2.0.0'
-info:
-    title: Streetlights API
-    version: '1.0.0'
-    description: |
-    The Smartylighting Streetlights API allows you
-    to remotely manage the city lights.
-    license:
-    name: Apache 2.0
-    url: 'https://www.apache.org/licenses/LICENSE-2.0'
+    info:
+      title: Streetlights API
+      version: '1.0.0'
+      description: |
+        The Smartylighting Streetlights API allows you
+        to remotely manage the city lights.
+      license:
+        name: Apache 2.0
+        url: 'https://www.apache.org/licenses/LICENSE-2.0'
 
-servers:
-    mosquitto:
-    url: mqtt://test.mosquitto.org
-    protocol: mqtt
+    servers:
+      mosquitto:
+        url: mqtt://test.mosquitto.org
+        protocol: mqtt
 
-channels:
-    light/measured:
-    publish:
-        summary: Inform about environmental lighting conditions for a particular streetlight.
-        operationId: onLightMeasured
-        message:
-        payload:
-            type: object
-            properties:
-            id:
-                type: integer
-                minimum: 0
-                description: Id of the streetlight.
-            lumens:
-                type: integer
-                minimum: 0
-                description: Light intensity measured in lumens.
-            sentAt:
-                type: string
-                format: date-time
-                description: Date and time when the message was sent.
+    channels:
+      light/measured:
+        publish:
+          summary: Inform about environmental lighting conditions for a particular streetlight.
+          operationId: onLightMeasured
+          message:
+            payload:
+              type: object
+              properties:
+                id:
+                  type: integer
+                  minimum: 0
+                  description: Id of the streetlight.
+                lumens:
+                  type: integer
+                  minimum: 0
+                  description: Light intensity measured in lumens.
+                sentAt:
+                  type: string
+                  format: date-time
+                  description: Date and time when the message was sent.
 </pre>
 
 Let's break it down into pieces:
