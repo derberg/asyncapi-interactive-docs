@@ -34,3 +34,6 @@ Use MQTT client to send a message to the broker you started in the previous step
 1. Send message to your application: `mqtt pub -t 'light/measured' -h 'localhost' -m '{"id": 1, "lumens": 3, "sentAt": "2017-06-07T12:34:32.000Z"}'`{{execute}}
 
 Go back to first terminal and notice that in your service logs you can see the message you just sent.
+
+
+https://[[HOST_SUBDOMAIN]]-1883-[[KATACODA_HOST]].environments.katacoda.com
