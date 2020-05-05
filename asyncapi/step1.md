@@ -1,8 +1,9 @@
 Let's start by creating an AsyncAPI file to describe your API. It will help you generate the code and the documentation later.
 
-Copy below content to the editor, into `asyncapi.yml` file:
+Copy below content to the editor, into `asyncapi.yaml` file:
 
-<pre class="file" data-filename="asyncapi.yml" data-target="replace">asyncapi: '2.0.0'
+<pre class="file" data-filename="asyncapi.yaml" data-target="replace">
+asyncapi: '2.0.0'
     info:
       title: Streetlights API
       version: '1.0.0'
