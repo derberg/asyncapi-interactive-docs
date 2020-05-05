@@ -3,7 +3,7 @@ Let's start by creating an AsyncAPI file to describe your API. It will help you 
 Copy below content to the editor, into `asyncapi.yaml` file:
 
 <pre class="file" data-filename="asyncapi.yaml" data-target="replace">
-asyncapi: '2.0.0'
+    asyncapi: '2.0.0'
     info:
       title: Streetlights API
       version: '1.0.0'
