@@ -29,7 +29,7 @@
     "asyncapi.yml"
   ],
   "environment": {
-    "uilayout": "editor-terminal-terminal"
+    "uilayout": "editor-terminal"
   },
   "backend": {
     "imageid": "javascript"
