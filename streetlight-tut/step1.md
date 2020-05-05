@@ -16,7 +16,7 @@ info:
 
 servers:
   mosquitto:
-    url: mqtt://test.mosquitto.org
+    url: mqtt://localhost
     protocol: mqtt
 
 channels:
