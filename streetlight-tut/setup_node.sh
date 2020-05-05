@@ -1,5 +1,4 @@
 #!/bin/bash
 
-apt update
-yes | apt install nodejs
-yes | apt install npm
+curl -sL https://deb.nodesource.com/setup_12.x | bash -
+apt-get install -y nodejs
