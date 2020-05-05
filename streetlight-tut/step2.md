@@ -1,9 +1,4 @@
 To generate your code you'll use the [AsyncAPI Generator](https://github.com/asyncapi/generator) Node.js template.
-Make sure proper aliases are available: 
-```
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-```{{execute}}
 
 # Generating code
 
@@ -24,7 +19,7 @@ Install and start the service:
 
 In this tutorial you use [Eclipse Mosquitto](https://mosquitto.org/) broker:
 
-`docker run -it -p 1883:1883 -p 9001:9001 eclipse-mosquitto`{{execute T2}}
+`docker run -it -p 1883:1883 eclipse-mosquitto`{{execute T2}}
 
 # Send a message to the broker
 
@@ -34,6 +29,3 @@ Use MQTT client to send a message to the broker you started in the previous step
 1. Send message to your application: `mqtt pub -t 'light/measured' -h 'localhost' -m '{"id": 1, "lumens": 3, "sentAt": "2017-06-07T12:34:32.000Z"}'`{{execute}}
 
 Go back to first terminal and notice that in your service logs you can see the message you just sent.
-
-
-https://[[HOST_SUBDOMAIN]]-1883-[[KATACODA_HOST]].environments.katacoda.com
