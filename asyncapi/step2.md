@@ -10,10 +10,14 @@ To generate your code you'll use the [AsyncAPI Generator](https://github.com/asy
 
 # Running your code
 
+In one terminal perform below steps:
+
 1. Install dependencies of newly generated application: `npm install`{{execute}}
 1. Start the application: `npm start`{{execute}}
-1. In another terminal install the MQTT.js library: `npm install mqtt -g`{{execute}}
-1. Send message to your application: `mqtt pub -t 'light/measured' -h 'test.mosquitto.org' -m '{"id": 1, "lumens": 3, "sentAt": "2017-06-07T12:34:32.000Z"}'`{{execute}}   
+
+Perform below steps that run in another terminal:
+1. In another terminal install the MQTT.js library: `npm install mqtt -g`{{execute T2}}
+1. Send message to your application: `mqtt pub -t 'light/measured' -h 'test.mosquitto.org' -m '{"id": 1, "lumens": 3, "sentAt": "2017-06-07T12:34:32.000Z"}'`{{execute T2}}
 1. Go back to previous terminal and notice that your application logs the message you just sent.
 
 # Conclusions
