@@ -8,7 +8,7 @@
       {
         "title": "Step 1",
         "text": "step1.md",
-        "courseData": "setup_node.sh"
+        "code": "setup_node.sh"
       },
       {
         "title": "Step 2",
