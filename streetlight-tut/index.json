@@ -32,6 +32,7 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "javascript"
+    "imageid": "javascript",
+    "port": 80
   }
 }
