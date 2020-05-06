@@ -34,3 +34,5 @@ Use MQTT client to send a message to the broker you started in the previous step
 
 1. Install the MQTT.js library: `npm install mqtt -g`{{execute T3}}
 1. Send message to your application: `mqtt pub -t 'light/measured' -h 'localhost' -m '{"id": 1, "lumens": 3, "sentAt": "2017-06-07T12:34:32.000Z"}'`{{execute}}
+
+Check the first terminal to see that your generated service received a message. 
