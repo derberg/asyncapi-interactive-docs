@@ -24,7 +24,7 @@ Install and start the service:
 
 In this tutorial you use [Eclipse Mosquitto](https://mosquitto.org/) broker:
 
-`docker run -it -p 1883:1883 eclipse-mosquitto`{{execute T2}}
+`docker run -it -p 1883:1883 eclipse-mosquitto:1.5`{{execute T2}}
 
 # Send a message to the broker
 
