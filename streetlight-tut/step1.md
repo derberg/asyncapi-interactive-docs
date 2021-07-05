@@ -3,7 +3,7 @@ Let's start by creating an AsyncAPI file to describe your API. It will help you 
 Copy below content to the editor, into `asyncapi.yaml` file:
 
 <pre class="file" data-filename="asyncapi.yaml" data-target="replace">
-asyncapi: '2.0.0'
+asyncapi: '2.1.0'
 info:
   title: Streetlights API
   version: '1.0.0'
@@ -46,7 +46,7 @@ channels:
 Let's break it down into pieces:
 
 ```yaml
-asyncapi: '2.0.0'
+asyncapi: '2.1.0'
 info:
   title: Streetlights API
   version: '1.0.0'
@@ -58,7 +58,7 @@ info:
     url: 'https://www.apache.org/licenses/LICENSE-2.0'
 ```
 
-- The `asyncapi` field indicates you use AsyncAPI version 2.0.0.
+- The `asyncapi` field indicates you use AsyncAPI version 2.1.0.
 - Inside the `info` field you find information about the API, like its name, version, description, and its license.
 
 We're now going for the `channels` section. It is used to describe the event names your API will be publishing and/or subscribing to.
